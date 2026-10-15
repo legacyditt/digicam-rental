@@ -8,6 +8,7 @@
     <!-- Preconnect agar browser lebih cepat koneksi ke server Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Memuat font: DM Mono (untuk stiker/kicker) & Space Grotesk (untuk judul/body) -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700;800&display=swap"
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- ================= NAVBAR ================= -->
+    <!-- Navigasi utama: logo, anchor link per section, dan tombol booking -->
     <header class="navbar">
       <a class="logo" href="#">FLASH<span>BACK</span></a>
       <nav class="links">
@@ -26,7 +29,9 @@
       </nav>
       <button class="primary">Sewa Sekarang ↗</button>
     </header>
+
     <main>
+      <!-- ================= HERO SECTION ================= -->
       <section class="hero">
         <div class="left-content">
           <div class="kicker">DIGICAM RENTAL • KUPANG, NTT</div>
@@ -66,6 +71,9 @@
         </div>
       </section>
 
+      <!-- ================= 01. THE COLLECTION (KATALOG KAMERA) ================= -->
+      <!-- Menampilkan daftar digicam yang disewakan.
+           Tiap tombol sewa memiliki data-camera dan data-price yang dibaca script.js untuk mengisi modal booking -->
       <section id="digicam" class="collection">
         <div class="section-head">
           <div>
@@ -78,9 +86,11 @@
           </p>
         </div>
         <div class="grid">
+          <!-- Item Kamera 1: Sony W55 -->
           <article class="card">
             <img
               src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+              alt="Sony W55 Digicam"
             />
             <div class="card-body">
               <div class="card-top">
@@ -100,9 +110,11 @@
             </div>
           </article>
 
+          <!-- Item Kamera 2: Canon IXUS -->
           <article class="card">
             <img
-              src="	https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=900&q=85"
+              src="https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=900&q=85"
+              alt="Canon IXUS Digicam"
             />
             <div class="card-body">
               <div class="card-top">
@@ -122,9 +134,11 @@
             </div>
           </article>
 
+          <!-- Item Kamera 3: Cyber Shot -->
           <article class="card">
             <img
-              src="	https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=85"
+              src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=85"
+              alt="Cyber Shot Digicam"
             />
             <div class="card-body">
               <div class="card-top">
@@ -146,6 +160,8 @@
         </div>
       </section>
 
+      <!-- ================= 02. THE FEELING (MANIFESTO) ================= -->
+      <!-- Menjelaskan daya tarik dan estetika autentik foto digicam -->
       <section id="why" class="why">
         <div>
           <div class="eyebrow">02 / The Feeling</div>
@@ -160,6 +176,8 @@
         </p>
       </section>
 
+      <!-- ================= 03. GALLERY (HASIL FOTO DIGICAM) ================= -->
+      <!-- Contoh mood & hasil foto untuk berbagai momen -->
       <section class="gallery-section">
         <div class="section-head">
           <div>
@@ -175,20 +193,26 @@
           <img
             class="g1"
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+            alt="Foto pantai dengan digicam"
           /><img
             src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Foto teman-teman"
           /><img
             class="g3"
             src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Momen kebersamaan"
           /><img
             src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Momen pesta/event"
           /><img
             class="g4"
             src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Momen outdoor liburan"
           />
         </div>
       </section>
 
+      <!-- ================= 04. THE PROCESS (CARA SEWA) ================= -->
       <section id="how" class="process">
         <div class="section-head">
           <div>
@@ -226,6 +250,8 @@
         </div>
       </section>
 
+      <!-- ================= 05. INFORMASI RENTAL ================= -->
+      <!-- Ketentuan umum seputar pickup lokasi, koordinasi WA, cara pembayaran, dan DP 40% -->
       <section class="information">
         <div class="section-head">
           <div>
@@ -237,6 +263,7 @@
           </div>
         </div>
         <div class="info">
+          <!-- Card Info 1: Lokasi Pickup -->
           <div class="info-card">
             <div class="icon">
               <svg
@@ -256,6 +283,8 @@
             <h3>Pickup</h3>
             <p>Pickup langsung di Kota Kupang.</p>
           </div>
+
+          <!-- Card Info 2: WhatsApp -->
           <div class="info-card">
             <div class="icon">
               <svg
@@ -276,6 +305,8 @@
             <h3>WhatsApp</h3>
             <p>Konfirmasi dan koordinasi dilakukan via WhatsApp.</p>
           </div>
+
+          <!-- Card Info 3: Payment -->
           <div class="info-card">
             <div class="icon">
               <svg
@@ -295,6 +326,8 @@
             <h3>Payment</h3>
             <p>QRIS atau cash sesuai kesepakatan rental.</p>
           </div>
+
+          <!-- Card Info 4: DP 40% -->
           <div class="info-card">
             <div class="icon">
               <svg
@@ -318,6 +351,7 @@
         </div>
       </section>
 
+      <!-- ================= 06. FAQ (PERTANYAAN YANG SERING DIAJUKAN) ================= -->
       <section id="faq">
         <div class="section-head">
           <div>
@@ -363,6 +397,7 @@
         </div>
       </section>
 
+      <!-- ================= CTA  ================= -->
       <section class="cta">
         <h2>
           Ready to make <br />
@@ -372,6 +407,9 @@
         <a class="primary" href="#digicam">Browse Digicams →</a>
       </section>
     </main>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Identitas brand, info lokasi operasional, dan tautan media sosial -->
     <footer>
       <div>
         <strong class="logo">FLASHBACK</strong>
@@ -386,8 +424,10 @@
       </div>
     </footer>
 
+    <!-- ================= MODAL FORM BOOKING ================= -->
     <dialog id="booking-modal" class="modal">
       <div class="modal-box">
+        <!-- Tombol silang untuk menutup modal -->
         <button type="button" id="close-modal" class="btn-close">✕</button>
 
         <div class="modal-header">
@@ -396,11 +436,13 @@
         </div>
 
         <form id="booking-form">
+          <!-- Kamera otomatis terisi dari tombol sewa yang diklik -->
           <div class="form-group">
             <label for="camera-name">Kamera Pilihan</label>
             <input type="text" id="camera-name" readonly />
           </div>
 
+          <!-- Pilihan rentang tanggal sewa -->
           <div class="form-row">
             <div class="form-group">
               <label for="start-date">Mulai Sewa</label>
@@ -412,6 +454,7 @@
             </div>
           </div>
 
+          <!-- Data pemesan -->
           <div class="form-group">
             <label for="customer-name">Nama Lengkap</label>
             <input
@@ -432,6 +475,7 @@
             />
           </div>
 
+          <!-- Ringkasan durasi dan kalkulasi estimasi biaya sewa -->
           <div class="price-breakdown">
             <div class="price-row">
               <span>Durasi Sewa:</span>
@@ -447,6 +491,7 @@
             </div>
           </div>
 
+          <!-- Submit pemesanan via WhatsApp -->
           <button type="submit" class="btn-submit-form">Pesan Sekarang via WhatsApp ↗</button>
         </form>
       </div>
